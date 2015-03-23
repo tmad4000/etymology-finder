@@ -1,0 +1,9 @@
+{% extends "layout.html" %}
+{% block content %}
+	<b>Query</b>: {{ query }} <br><br>
+   	<b>Origin:</b> {{ origin }} <br><br>
+   	<b>Cousins:</b><br>
+   	{% for c in cousins %}
+   	{{ c }}<br>
+   	{% endfor %}
+{% endblock %}
